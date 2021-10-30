@@ -72,7 +72,7 @@ configureSail() {
         cp .env.example .env
     fi
 
-    if [ ! -f './.sonar.example' ]; then
+    if [ ! -f './sonar-project.properties' ]; then
         cp .sonar.example sonar-project.properties
     fi
 
