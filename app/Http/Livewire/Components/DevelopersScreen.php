@@ -16,10 +16,25 @@ use Livewire\Component;
 
 class DevelopersScreen extends Component
 {
+    /**
+     * Logged user information.
+     * @var mixed
+     */
     public mixed $loggedUser;
 
+    /**
+     * List of developers that logged user can see.
+     *
+     * @var mixed
+     */
     public mixed $developers;
 
+    /**
+     * Method that execute something cool in the project.
+     * @param int $toUserId
+     * @param string $actionName
+     * @return void
+     */
     public function action(int $toUserId, string $actionName): void
     {
         Action::updateOrCreate([
